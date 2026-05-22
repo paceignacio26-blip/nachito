@@ -1,0 +1,11 @@
+button{
+    cursor:pointer; /*puntero manito*/
+    background-color:aquamarine;
+    color:black; /*color de letra*/
+    border-radius: 10px; /*redondea las esquinas*/
+}
+button:hover{ /* cambio la apariencia del boton */
+    background-color:dimgray;
+    color: blueviolet;
+    
+}

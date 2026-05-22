@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="mensaje"></p>
+     <!-- ejecuta la funcion dentro de un boton o objeto desde adentro -->
+    <button onclick="mensajeAlerta()">alerta</button>
+
+    <script>
+        function mensajeAlerta(){
+         alert("atencion alumnos: no deben llegar tarde!!");
+         const caja_mensaje= document.getElementById("mensaje");
+         caja_mensaje.textContent= "entendido profe";
+       }
+
+    </script>
+
+</body>
+</html>

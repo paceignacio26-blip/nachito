@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventlistener</title>
+    <style>
+     button{
+    cursor:pointer; /*puntero manito*/
+    background-color:aquamarine;
+    color:black; /*color de letra*/
+    border-radius: 10px; /*redondea las esquinas*/
+    }
+    button:hover{ /* cambio la apariencia del boton */
+    background-color:dimgray;
+    color: blueviolet;
+    
+     }
+     .titulo{
+     text-align: center;
+      color: cornflowerblue;
+      font-weight: bold;
+      font-size: 50px;
+     }
+    </style>
+</head>
+<body>
+    <div id="titulo1">escuela EETP N° 614</div>
+    <h1 id="mensaje" ></h1>
+    <button id="btn_mensaje">alerta</button>
+    <button id="btn_limpiar">limpiar</button>
+    <button id="btn_formato">dar formato al titulo</button>
+    <button id="btn_quitarformato">quitar formato</button>
+    
+
+
+    <script>
+        /* capturas realizadas */
+      const mensaje1= document.getElementById("mensaje");
+      const botonalerta=document.getElementById("btn_mensaje");
+      const botonlimpiar=document.getElementById("btn_limpiar");
+      const botonformato=document.getElementById("btn_formato");
+      const botontitulo1=document.getElementById("titulo1");
+      const quitarformato=document.getElementById("btn_quitarformato");
+      /* escuchas del click */ 
+      botonalerta.addEventListener("click",function(){
+        /* alert("es importante tener queque") */
+      mensaje1.textContent="entendido";
+      }) 
+       botonlimpiar.addEventListener("click",function(){
+         mensaje1.textContent="";
+       })
+
+       botonformato.addEventListener("click", function(){
+        botontitulo1.classList.add("titulo")
+       })
+       quitarformato.addEventListener("click", function(){
+        botontitulo1.classList.remove("titulo")
+       })
+        
+
+       
+
+
+     </script>
+</body>
+</html>
